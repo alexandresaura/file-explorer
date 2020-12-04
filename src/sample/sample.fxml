@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" prefHeight="432.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <SplitPane dividerPositions="0.25" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+        <TreeView fx:id="treFolders" onKeyReleased="#handleTreFoldersKeyReleased"
+                  onMouseClicked="#handleTreFoldersClick"/>
+        <TableView fx:id="tblView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn fx:id="colName" text="Nome"/>
+                <TableColumn fx:id="colLastModified" text="Data de modificação"/>
+                <TableColumn fx:id="colType" text="Tipo"/>
+                <TableColumn fx:id="colSize" text="Tamanho"/>
+            </columns>
+        </TableView>
+    </SplitPane>
+    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#handleBtnCreateFolderClick"
+            text="Criar pasta" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1"
+            GridPane.valignment="CENTER"/>
+    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#handleBtnSubmitFileClick"
+            text="Enviar arquivo" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS"
+            GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
+</GridPane>
