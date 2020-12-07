@@ -6,8 +6,10 @@
 ### Integrantes  
 #### Nome: Alexandre Saura.  
 #### Nome: Fábio Thomaz.  
+#### Nome: Maurício Freire.  
 #### Nome: Ricardo Oliveira.  
 #### Nome: Rodrigo Suarez.  
+#### Nome: Vinnicius Stein.  
 
 ### Descrição  
 > Construir um arquivo para simular um "sistema de arquivos" do estilo "jar", "zip", etc. Não há necessidade de compactação, somente concatenação de vários arquivos (em formato binário).  
